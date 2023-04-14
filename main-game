@@ -1,0 +1,300 @@
+import time
+import sys
+import random
+
+inicio = print("×××× A BUSCA PELA RELÍQUIA PERDIDA ××××")
+time.sleep(2)
+print("\n----Cidade do Progresso----")
+time.sleep(2)
+print("\nProfessor: Alô?")
+time.sleep(1)
+print("\nProfessor: Alô, alguém na escuta?")
+time.sleep(1)
+print('''\nResponder?
+[1] Sim
+[2] Não''')
+opção = int(input("\n>>> "))
+if opção == 1:
+    time.sleep(1)
+    print("\nVocê: Estou na escuta!")
+    time.sleep(1)
+
+elif opção == 2:
+    time.sleep(1)
+    print("\nFim de jogo, volte quando estiver preparado!")
+    sys.exit()
+
+print("\nProfessor: Ah que ótimo! Meu nome é Arquibaldo e sou professor de arqueologia.")
+time.sleep(1)
+print("\nVocê: É um prazer receber sua ligação professor Arquibaldo! Eu sou o(a)...")
+time.sleep(1)
+print("\n---> Digite o seu nome:")
+nome = str(input("\n>>> "))
+time.sleep(1)
+print("\nProf. Arquibaldo: " + nome + ", que alívio ouvir esse nome! Acho que somente você pode me ajudar.")
+time.sleep(2)
+print("\nHá anos estudo sobre a cultura do povo Caeruleum e\nfinalmente descobri a localização de uma relíquia\nque aparentemente concedia a essa civilização o\npoder de controlar o tempo!")
+time.sleep(2)
+print("\nPorém, eu não sou o único que está atrás dessa relíquia.\nA organização Terraris quer obter esse poder a qualquer\ncusto e não sabemos o que vai acontecer se eles\ncolocarem as mãos na relíquia")
+time.sleep(5)
+print('''\nAjudar o professor?
+[1] Sim
+[2] Não''')
+opção = int(input("\n>>> "))
+if opção == 1:
+    time.sleep(1)
+    print("\n" + nome + ": É claro que eu irei te ajudar, professor!")
+    time.sleep(1)
+
+elif opção == 2:
+    time.sleep(1)
+    print("\n" + nome + ": Infelizmente não poderei te ajudar, professor!")
+    time.sleep(1)
+    print("\nVocê desliga o telefone. E volta tranquilamente para o seu sofá para tirar um cochilo.")
+    time.sleep(1)
+    print("\n----- Uma semana depois... -----")
+    time.sleep(1)
+    print("\nNoticiario da TV: Caos na Terra! Ondas extremas de frente fria congelam todo o litoral do País, enquanto ondas de calor provocam incêndios florestais em diversos locais!")
+    time.sleep(2)
+    print("\nNoticiario da TV: Professor Arquibaldo, famoso por sua contribuição à ciência e cultura está desaparecido!")
+    time.sleep(3)
+    sys.exit()
+
+print("\nSabia que poderia contar com você, " + nome + ".")
+time.sleep(1)
+print("\nEstarei enviando a minha pesquisa para o seu email,\nnela contém instruções para chegar ao local aproximado da\nantiga civilização derentora da relíquia.")
+time.sleep(2)
+print("\n""~~~~~~~~~~~~~~~~~~~~~~"*10)
+time.sleep(1)
+print("\n---- Cidade Caelum ----")
+time.sleep(1)
+print("\nNarrador: Você chega na localização informada no email\ne descobre se tratar de uma pequena vila ao lado de uma floresta densa.")
+time.sleep(1)
+print("\nHá alguns comerciantes que vendem suprimentos e equipamentos, e algumas pessoas que podem lhe dar informações sobre a região.\nVocê tem algumas opções:")
+print('''\n[1] Visitar o comerciante local e comprar suprimentos, como comida, água, e equipamentos de acampamento.
+[2] Falar com os moradores locais para saber mais sobre a floresta e a relíquia perdida.
+[3] Ir diretamente para a floresta, sem se preocupar com suprimentos ou informações.'''
+)
+opção=int(input("\n>>>"))
+if opção == 1:
+    time.sleep(1)
+    print("\nNarrador: Ótima escolha, estar preparado é a melhor coisa a se fazer nessa situação!")
+    time.sleep(2)
+    print("\nComerciante: Obrigado por comprar em minha loja! \nPermita-me dar um conselho, cuidado com a floresta. \nHá um poema antigo que diz: \nbSe na floresta você se aventurar \nBem atento o seu você deve estar \nQuando a melodia seu ouvido escutar \nO seu caminho encontrará")
+    time.sleep(4)
+    print("\nNarrador: Pronto, você está abastecido e preparado. Para onde você irá agora:")
+    time.sleep(1)
+    print('''\n[1] Ir para a floresta
+[2] Falar com os moradores locais''')
+    alternativa=input("\n>>>")
+    if alternativa == 1:
+        print("\nNarrador: Ok, vamos para a floresta!")
+    elif alternativa == 2:
+        time.sleep(1)
+    print("\nNarrador: Boa escolha! Conhecimento é bem importante para um explorador.")
+    time.sleep(3)
+    print("\nMorador: Tenha cuidado," + nome + " as lendas falam que somente aqueles com motivações puras conseguem alcançar a relíquia.")
+    time.sleep(2)
+    print("\nMorador: Lembre-se de confiar em seus instintos, nem sempre o caminho mais seguro é o correto!.")
+    time.sleep(1)
+elif opção == 2:
+    time.sleep(1)
+    print("\nNarrador: Boa escolha! Conhecimento é bem importante para um explorador.")
+    time.sleep(3)
+    print("\nMorador 1: Tenha cuidado," + nome + " as lendas falam que a única maneira de entrar na sala da relíquia é por 'andar pelo abismo'.")
+    time.sleep(2)
+    print("\nMorador 2: Lembre-se de confiar nos seus instintos, as vezes o caminho nem sempre está a vista.")
+    time.sleep(1)
+    print("\nNarrador: Depois de conversar com os moradores locais, você decide ir a floresta.")
+
+time.sleep(2)
+print("\n---- Floresta Solis ----")
+time.sleep(1)
+print("\nNarrador: Ao chegar na floresta você percebe que não se trata de uma floresta comum. Há uma estranha força magnética que te atrai para o centro dela")
+time.sleep(2)
+print("\nO que vocé deseja fazer:")
+time.sleep(1)
+print('''\n[1] Ir diretamente para o centro da floresta.
+[2] Explorar os arredores da floresta.''')
+opção=int(input("\n>>>"))
+if opção == 1:
+    time.sleep(1)
+    print("\nNarrador: Ok, vamos para o centro!")
+    time.sleep(1)
+elif opção == 2:
+    time.sleep(1)
+    print("\nNarrador: Ótimo, vamos explorar um pouco!")
+    time.sleep(2)
+    print("\nNarrador: Andando um pouco, você começa a notar que a cada 1km a vegetação muda, assim como o clima também.")
+    time.sleep(2)
+    print("\nNarrador: É como se você passando pelas quatros estações do ano enquanto explora a floresta!")
+    time.sleep(1)
+    print("\nNarrador: Você registra essa experiência em seu diário de bordo e resolve ir ao centro da floresta.")
+    time.sleep(2)
+
+print("\n---- Centro da Floresta Solis ----")
+time.sleep(1)
+print("\nNarrador: Enfim, chegamos ao centro da floresta!")
+time.sleep(1)
+print("\nNarrador: Olhando ao redor você encontra o que parece ser uma caverna subterranea  que contém uma placa na entrada.")
+time.sleep(2)
+print('''\n[1] Ler a placa
+[2] Ignorar a placa''')
+opção=int(input("\n>>>"))
+if opção == 1:
+    time.sleep(1)
+    print("\nNarrador: A placa contém as seguintes palavras:")
+    time.sleep(1)
+    print("Aqueles que desejam entrar, preparados devem estar.\nEscolher errado, a sua jornada ao início retornará!")
+    time.sleep(1)
+elif opção == 2:
+    time.sleep(1)
+    print("\nNarrador: Você decide ignorar a placa e entra na caverna")
+    time.sleep(1)
+
+print("\n---- Caverna Tempestus ----")
+time.sleep(1)
+print("\nNarrador: Você anda por uns 3 minutos e se depara com 3 portas de madeira.")
+time.sleep(1)
+print("\nNarrador: Qual porta você escolhe?")
+time.sleep(1)
+print('''\n[1] Escolher a porta da esquerda.
+[2] Escolher a porta do meio.
+[3] Escolher a porta da direita.
+[4] Tentar escutar através das portas.''')
+opção=int(input("\n>>>"))
+if opção == 1:
+            time.sleep(1)
+            print("\nNarrador: Assim que você abre a porta e dá o primeiro passo, \num alçapão se abre em baixo do seus pés e você infelizmente fica preso.")
+            time.sleep(1)
+            print("\nNarrador: Esse é o fim da sua jornada, " + nome)
+            sys.exit()
+elif opção == 2:
+            time.sleep(1)
+            print("\nNarrador: Você entra na porta do meio e vai andando por alguns minutos no escuro.")
+            time.sleep(1)
+            print("\nNarrador: Aos poucos o você enxerga no horizonte uma luz que vai ficando cada vez mais forte indicando a saída.")
+            time.sleep(2)
+            print("\nNarrador: Quando você chega ao final do caminho, se depara com o começo da Floresta Solis.")
+            time.sleep(2)
+            print("\nNarrador: Você sente todo o seu corpo dormente e pesado.")
+            time.sleep(1)
+            print("\nNarrador: Olhando para o seus braços, você nota que está com o corpo cheio de macrosporos.")
+            time.sleep(1)
+            print("\nNarrador: Infelizmente, esse é o fim da sua jornada.")
+            sys.exit()
+
+elif opção == 3:
+            time.sleep(1)
+            print("\nNarrador: Você entra pela porta da direita e caminha pelo longo túnel até chegar em um abismo..")
+            time.sleep(1)
+            
+elif opção == 4:
+            time.sleep(1)
+            print("\nNarrador: Você encosta a sua orelha na porta da esquerda e não consegue ouvir nada.")
+            time.sleep(1)
+            print("\nNarrador: Na porta do meio, você escuta algo parecido com estalos")
+            time.sleep(1)
+            print("\nNarrador: Na porta da direita, há uma melodia bem fraca.")
+            time.sleep(2)
+            print("\nNarrador: Qual porta você escolhe?")
+            time.sleep(1)
+            print('''\n[1] Escolher a porta da esquerda.
+[2] Escolher a porta do meio.
+[3] Escolher a porta da direita.''')
+            alternativa=int(input("\n>>>"))
+            if alternativa == 1:
+                time.sleep(1)
+                print("\nNarrador: Assim que você abre a porta e dá o primeiro passo, \num alçapão se abre em baixo do seus pés e você infelizmente fica preso.")
+                time.sleep(1)
+                print("\nNarrador: Esse é o fim da sua jornada, " + nome)
+                sys.exit()
+            elif opção == 2:
+                time.sleep(1)
+                print("\nNarrador: Você entra na porta do meio e vai andando por alguns minutos no escuro.")
+                time.sleep(1)
+                print("\nNarrador: Aos poucos o você enxerga no horizonte uma luz que vai ficando cada vez mais forte indicando a saída.")
+                time.sleep(2)
+                print("\nNarrador: Quando você chega ao final do caminho, se depara com o começo da Floresta Solis.")
+                time.sleep(2)
+                print("\nNarrador: Você sente todo o seu corpo dormente e pesado.")
+                time.sleep(1)
+                print("\nNarrador: Olhando para o seus braços, você nota que está com o corpo cheio de macrosporos.")
+                time.sleep(1)
+                print("\nNarrador: Infelizmente, esse é o fim da sua jornada.")
+                sys.exit()
+
+            elif alternativa == 3:
+                time.sleep(1)
+                print("\nNarrador: Você entra pela porta da direita e caminha pelo longo túnel até chegar em um abismo..")
+                time.sleep(1)
+            
+print("\nNarrador: Olhando para o outro lado  do abismo você vê a relíquia em um pedestal, porém para chegar até ela só há duas opções:")
+time.sleep(1)
+print('''\n[1] Tentar chegar ao outro lado escalando pela parede.
+[2] Tentar atravessar o abismo pulando.''')
+opção=int(input("\n>>>"))
+if opção == 1:
+    time.sleep(1)
+    if random.random() <= 0.4:
+        print("\nNarrador: Você conseguiu escalar as paredes e chegar ao outro lado do abismo!")
+        time.sleep(1)
+        print:("\nNarrador: Estou impressionado com a sua agilidade e força.")
+        time.sleep(1)
+    else:
+        print("\nNarrador: Você escorregou e caiu no abismo. Sinto muito, " + nome + ". Sua jornada acaba aqui!")
+        sys.exit()
+else:
+    if random.random() <= 0.6:
+        print("\nNarrador: Isso é incrível! Você conseguiu chegar ao outro lado do abismo. Parabéns!")
+        time.sleep(1)
+    else:
+        print("Você não conseguiu pular o abismo e caiu. Sinto muito, " + nome + ". Sua jornada acaba aqui!")
+        sys.exit()
+
+print("\nNarrador: Agora que a relíquia está em suas mãos, é hora de voltar até o professor Arquibaldo.")
+time.sleep(2)
+print("\n""~~~~~~~~~~~~~~~~~~~~~~"*10)
+print("\n**** 2 semanas depois ****")
+time.sleep(1)
+print("\n----Cidade do Progresso----")
+time.sleep(2)
+print("\nProf. Arquibaldo: Estamos aqui reunidos para contemplar a maior descoberta da minha vida.")
+time.sleep(2)
+print("\nProf. Arquibaldo: Com a ajuda do grande aventureiro, " + nome + ", a relíquia antiga dos Caeruleum pode ser estudada.")
+time.sleep(2)
+print("\nProf. Arquibaldo: Com o poder dessa relíquia estaremos avançando em direção a uma evolução tecnologica surpreendente!")
+time.sleep(2)
+print("\n~~~~~~~~~~"*5)
+time.sleep(2)
+print("\n**** 3 dias depois ****")
+time.sleep(1)
+print("\n Escritório do(a) " + nome)
+time.sleep(1)
+print("\n O telefone toca...")
+time.sleep(1)
+print('''\n [1] Atender o telefone
+[2] Ignorar''')
+opção=int(input("\n>>>"))
+if opção == 1:
+    time.sleep(1)
+    print("\n" + nome + ": Alô?")
+    time.sleep(2)
+    print("\nProf. Arquibaldo: So...ro")
+    time.sleep(2)
+    print("\nProf. Arquibaldo: ..co.ro")
+    time.sleep(2)
+    print("\nProf. Arquibaldo: SOCORRO")
+    
+elif opção == 2:
+    time.sleep(1)
+    print("\nNarrador: Acho que você está cansado de aventuras. Infelizmente não saberemos quem estava te ligando.")
+    time.sleep(2)
+    print("\nObrigado por jogar!")
+    sys.exit()
+
+time.sleep(2)
+print("\n||||||||||||||||||| Fim do primeiro arco |||||||||||||||||||")
+print("\nObrigado por jogar! Em breve voltaremos com mais aventuras do(a) grande, " + nome) 
+sys.exit()
+
