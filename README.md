@@ -1,7 +1,7 @@
 # reliquia-game
 Um jogo interativo feito em Python.
 
-# **Enredo**
+# Enredo
 Você é um jovem aventureiro que recebe uma ligação de um famoso professor de Arqueologia sobre a descoberta da localização de uma relíquia antiga que tem o poder de controlar o clima. Sua missão é encontrar e recuperar a relíquia. 
 
 # Bibliotecas
